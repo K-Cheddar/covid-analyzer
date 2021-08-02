@@ -422,6 +422,16 @@ void Menu::state(StateTree _treeData[], MinHeap _heapData[]) {
         stateName[1] = toupper(stateName[1]);
         stateName = StateAbbreviations[stateName];
     }
+    // Case sensitivity adjustments.
+    else if (stateName.length() == 3) {
+        stateName[0] = toupper(stateName[0]);
+        stateName[1] = toupper(stateName[1]);
+        stateName[2] = toupper(stateName[2]);
+    }
+    else {
+        stateName[0] = toupper(stateName[0]);
+    }
+
     // State Full name registration.
     if (Menu::States.find(stateName) != Menu::States.end() || stateName == "USA") {
         timeFrame(_treeData, _heapData, stateName);
