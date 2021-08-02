@@ -2,6 +2,7 @@
 
 using namespace std;
 
+// Default constructor
 Node::Node() {
     state = " ";
     confirmed = 0;
@@ -9,7 +10,9 @@ Node::Node() {
     incidentRate = 0;
     fatalityRate = 0;
 }
-Node::Node(string _state, string _confirmed, string _deaths, string _incidentRate) {
+
+// Construct that gets the 4 different data within .csv files and create a new node object
+Node::Node(string _state, const string& _confirmed, const string& _deaths, string _incidentRate) {
     state = _state;
     confirmed = stol(_confirmed);
     deaths = stol(_deaths);
@@ -22,7 +25,8 @@ Node::Node(string _state, string _confirmed, string _deaths, string _incidentRat
     fatalityRate = ((double)deaths / confirmed) * 100;
 }
 
-void Node::add(string _confirmed, string _deaths, string _incidentRate) {
+// Add the 4 different data within .csv files to an existing node object.
+void Node::add(const string& _confirmed, const string& _deaths, string _incidentRate) {
     confirmed = confirmed + stol(_confirmed);
     deaths = deaths + stol(_deaths);
 
@@ -34,7 +38,8 @@ void Node::add(string _confirmed, string _deaths, string _incidentRate) {
     fatalityRate = ((double)deaths / confirmed) * 100;
 }
 
-void Node::printNode() {
+// Print the node object
+void Node::printNode() const {
     cout << "State: " << state << endl;
     cout << "Confirmed: " << confirmed << endl;
     cout << "Deaths: " << deaths << endl;

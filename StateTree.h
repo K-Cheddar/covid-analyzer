@@ -3,17 +3,19 @@
 
 using namespace std;
 
+// TreeNode struct that is an extension of Node struct with 2 additional TreeNode pointers, left and right.
 struct TreeNode : Node {
     TreeNode* left;
     TreeNode* right;
 
-    TreeNode (string state, string confirmed, string deaths, string incidentRate);
+    TreeNode (string state, const string& confirmed, const string& deaths, string incidentRate);
 
 };
 
 class StateTree {
 private:
-    TreeNode * root; //  tree root
+    // Tree's root
+    TreeNode * root;
 
     void privateInsert(TreeNode* currentNode, TreeNode * newNode);
 
