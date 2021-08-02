@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Project_3" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Project_3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Project_3" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../../Downloads/test1.csv" />
+		<Unit filename="Data/1.csv" />
+		<Unit filename="Data/10.csv" />
+		<Unit filename="Data/11.csv" />
+		<Unit filename="Data/12.csv" />
+		<Unit filename="Data/13.csv" />
+		<Unit filename="Data/14.csv" />
+		<Unit filename="Data/15.csv" />
+		<Unit filename="Data/16.csv" />
+		<Unit filename="Data/17.csv" />
+		<Unit filename="Data/18.csv" />
+		<Unit filename="Data/19.csv" />
+		<Unit filename="Data/2.csv" />
+		<Unit filename="Data/20.csv" />
+		<Unit filename="Data/21.csv" />
+		<Unit filename="Data/22.csv" />
+		<Unit filename="Data/23.csv" />
+		<Unit filename="Data/24.csv" />
+		<Unit filename="Data/25.csv" />
+		<Unit filename="Data/26.csv" />
+		<Unit filename="Data/27.csv" />
+		<Unit filename="Data/28.csv" />
+		<Unit filename="Data/29.csv" />
+		<Unit filename="Data/3.csv" />
+		<Unit filename="Data/30.csv" />
+		<Unit filename="Data/4.csv" />
+		<Unit filename="Data/5.csv" />
+		<Unit filename="Data/6.csv" />
+		<Unit filename="Data/7.csv" />
+		<Unit filename="Data/8.csv" />
+		<Unit filename="Data/9.csv" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Node.cpp" />
+		<Unit filename="StateTree.cpp" />
+		<Unit filename="StateTree.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="node.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

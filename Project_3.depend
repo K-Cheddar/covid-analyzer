@@ -1,0 +1,37 @@
+# depslib dependency file v1.0
+1627879273 source:c:\users\kpc\documents\project_3\main.cpp
+	<iostream>
+	<fstream>
+	"Node.h"
+	"StateTree.h"
+	"Menu.h"
+
+1627578607 c:\users\kpc\documents\project_3\nodestruct.h
+	<iostream>
+	<string>
+
+1627879271 c:\users\kpc\documents\project_3\statetree.h
+	"Node.h"
+
+1627879273 source:c:\users\kpc\documents\project_3\node.cpp
+	"Node.h"
+
+1627879273 c:\users\kpc\documents\project_3\node.h
+	<iostream>
+	<string>
+
+1627879273 source:c:\users\kpc\documents\project_3\statetree.cpp
+	"StateTree.h"
+	"Node.h"
+
+1627882960 c:\users\kpc\documents\project_3\menu.h
+	<string>
+	<set>
+	<map>
+	<iostream>
+	"Node.h"
+	"StateTree.h"
+
+1627884006 source:c:\users\kpc\documents\project_3\menu.cpp
+	"Menu.h"
+
