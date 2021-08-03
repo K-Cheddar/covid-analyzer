@@ -5,15 +5,15 @@ using namespace std;
 
 // All the States name in the USA.
 set<string> Menu::States = {"Alabama", "Alaska", "Arizona", "Arkansas", "California",
-                             "Colorado", "Connecticut", "Delaware", "Florida", "Georgia",
-                             "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
-                             "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts",
-                             "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana",
-                             "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico",
-                             "New York", "North Carolina", "North Dakota", "Ohio Oklahoma",
-                             "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
-                             "South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
-                             "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"};
+                            "Colorado", "Connecticut", "Delaware", "Florida", "Georgia",
+                            "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas",
+                            "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts",
+                            "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana",
+                            "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico",
+                            "New York", "North Carolina", "North Dakota", "Ohio Oklahoma",
+                            "Oregon", "Pennsylvania", "Rhode Island", "South Carolina",
+                            "South Dakota", "Tennessee", "Texas", "Utah", "Vermont",
+                            "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"};
 
 map<string, string> Menu::StateAbbreviations = {{"AL", "Alabama"}, {"AK", "Alaska"}, {"AZ", "Arizona"}, {"AR", "Arkansas"}, {"CA", "California"},
                                                 {"CO", "Colorado"}, {"CT", "Connecticut"}, {"DE", "Delaware"}, {"FL", "Florida"}, {"GA", "Georgia"},
@@ -430,6 +430,11 @@ void Menu::state(StateTree _treeData[], MinHeap _heapData[]) {
     }
     else {
         stateName[0] = toupper(stateName[0]);
+        for (int i = 1; i < stateName.length(); i++) {
+            if (isspace(stateName[i])) {
+                stateName[i + 1] = toupper(stateName[i + 1]);
+            }
+        }
     }
 
     // State Full name registration.
